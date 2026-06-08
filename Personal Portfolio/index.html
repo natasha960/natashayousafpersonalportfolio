@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Natasha.</h1>
+            <ul id="sidemenu"> 
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="close fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="open fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Natasha Yousaf</span><br>AND I am a Frontend Developer</h1>
+            <p>Creating fast, accessible, and responsive websites that enhance user experience.<br><br>
+            Code. Create. Innovate.<br><br>
+            Frontend Developer | Creative Designer | Problem Solver.</p>
+        </div>
+    </div>
+</div>
+<!-----------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/profile1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>I am a motivated student with the strong interest in technology and learning new skills.
+                     I am currently focused on improving my knowledge in computer science and related fields.
+                     I have good communication, teamworks, and problem-solving abilities that help me work effectively in different situation. 
+                     I am passionate about creativity, self-development, and achieving my career goals through hard work and dedication.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphics designing</span><br>Crafting visuals that communicates idea with impact.</li>
+                        <li><span>Web development</span><br>Buliding responsive and userfriendly websites.</li>
+                        <li><span>C++</span><br>I have knowledge of Object Oriented Programming and use it to solve real-world problems.</li>
+                        <li><span>Data Structures and Algorithms</span><br>Skilled in Data Structures and Algorithm for efficient problem solving.</li>
+                        <li><span>Productivity Tools</span><br>Skilled in using MS office and canva for documentation and design task.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2026</span><br>DevelopersHUB intership-Web Development</li>
+                        <li><span>2025</span><br>C++(object oriented Programming)</li>
+                        <li><span>2025</span><br>Worked as Graphic designer creating digital and social media designs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2027</span><br>BS Computer Science</li>
+                        <li><span>2021-2023</span><br>Intermediate of Computer Science</li>
+                        <li><span>2019-2021</span><br>Matric in Computer Science</li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------sercives--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create responsive and user- friendly websites using HTML,CSS and Javascript. I focused on designing clean,modern,and attractive
+                web pages that provide a smooth user experience. I am passionate about improving my frontend development skills and building creative 
+                web pages.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bezier-curve"></i>
+                <h2>Graphics Designing</h2>
+                <p>I craft aesthetic and creative visuals with a modern and attractive style.I enjoy making logo,posters and social media designs with the modern style.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------Portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY Work</h1>
+        <div class="work-list">
+            <div class="work">
+                  <img src ="image/work3.png">
+                <div class="layer">
+                    <h3>Recipe Finder </h3>
+                    <p>A frontend learning project focused on UI design,layout structuring and basic research-based understanding of web development concepts without full code implementation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work4.png">
+                <div class="layer">
+                    <h3>Graphics Designing</h3>
+                    <p>In my work, I have applied basic graphics designing technique to develop attractive visuals for practice projects.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work2.png">
+                <div class="layer">
+                    <h3>Hospital Management system </h3>
+                    <p>Developed using Object oriented Programming (OOP) concepts and implemented through coding to simulate real world hospital operation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>  
+    </div>
+</div>
+<!----------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-arrow-right-from-bracket"></i> natashayousaf0343@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 03435615746</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>    
+    </div>
+    <div class="copyright">
+        <p>Copyright@Natasha Yousaf</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>  
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    } 
+    </script>
+    <script>
+	const scriptURL ='https://script.google.com/macros/s/AKfycbwRR2izyRcN7vx4fhryCtcDaIQmAz5h7GpulzSLXMfJGEzhdO361II6ZYiJXKVo01pl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+        })
+    </script> 
+</body>
+</html> 
